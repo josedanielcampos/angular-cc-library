@@ -47,7 +47,7 @@
     "ng-packagr": "^19.1.2",
     "release-it": "^17.6.0",
     "ts-node": "~10.9.2",
-    "typescript": "~5.5.4"
+    "typescript": "~5.7.3"
   },
   "lint-staged": {
     "*.{ts,component.html}": [
