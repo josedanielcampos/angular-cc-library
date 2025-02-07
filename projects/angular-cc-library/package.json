@@ -20,7 +20,7 @@
     "url": "git+https://github.com/timofei-iatsenko/angular-cc-library.git"
   },
   "dependencies": {
-    "tslib": "^2.4.1"
+    "tslib": "^2.8.1"
   },
   "peerDependencies": {
     "@angular/common": "^19.1.4",
