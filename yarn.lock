@@ -10,32 +10,40 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@angular-builders/common@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@angular-builders/common/-/common-2.0.0.tgz#76920a63c50a84669c0a786b6281ae9fbf34560d"
-  integrity sha512-O5YJc++DtJVJhqA/OomRKN2jGYzvU/YXtfrPAqcA9Is3Ob5jvV0L0JHSAjSw/KaLvk/FjBIqoRVcYdLp5LKddA==
+"@angular-builders/common@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-builders/common/-/common-3.0.0.tgz#ea09a89fba710884feb7bc83dc68d48013a11860"
+  integrity sha512-AACGMwlBFYF3PaFekgJDCmqO1hMBrK5eyjHMN5aqJk3PV46BhnlNcQEa9pftLUKxoGijXBQzlalDZkceatyoMw==
   dependencies:
-    "@angular-devkit/core" "^18.0.0"
+    "@angular-devkit/core" "^19.0.0"
     ts-node "^10.0.0"
     tsconfig-paths "^4.1.0"
 
-"@angular-builders/jest@18.0.0":
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/@angular-builders/jest/-/jest-18.0.0.tgz#04f10017ea8c8cd4ec526aade3fabbf579042bfc"
-  integrity sha512-nPNWMlV1ryjir6CC8dY8f6yaNe0lM1VJwbvYM99HmJSeRo+1IwouQQGUjRM/2Dx4OMAmL4EAPh7Ud2nr3Gj/FA==
+"@angular-builders/jest@19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-builders/jest/-/jest-19.0.0.tgz#8c5bc60465bc1124238814de0243b5c49ad97f94"
+  integrity sha512-DEKragHT26kwUhXx9goYehQ/WxFzpVrMHIicYF+L7sLVmFyCwPwAslYZZBe/eTm/x++tKRHnun1lbcf1ZDccRg==
   dependencies:
-    "@angular-builders/common" "2.0.0"
-    "@angular-devkit/architect" ">=0.1800.0 < 0.1900.0"
-    "@angular-devkit/core" "^18.0.0"
-    jest-preset-angular "14.1.0"
+    "@angular-builders/common" "3.0.0"
+    "@angular-devkit/architect" ">=0.1900.0 < 0.2000.0"
+    "@angular-devkit/core" "^19.0.0"
+    jest-preset-angular "14.4.2"
     lodash "^4.17.15"
 
-"@angular-devkit/architect@0.1802.2", "@angular-devkit/architect@>=0.1800.0 < 0.1900.0":
+"@angular-devkit/architect@0.1802.2":
   version "0.1802.2"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1802.2.tgz#e099cb195169fc05c56c9ac2e1d7bf815c8e0bbb"
   integrity sha512-LPRl9jhcf0NgshaL6RoUy1uL/cAyNt7oxctoZ9EHUu8eh5E9W/jZGhVowjOLpirwqYhmEzKJJIeS49Ssqs3RQg==
   dependencies:
     "@angular-devkit/core" "18.2.2"
+    rxjs "7.8.1"
+
+"@angular-devkit/architect@>=0.1900.0 < 0.2000.0":
+  version "0.1901.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1901.6.tgz#aeaf4a5098ef1dd9107eeb8df4da9daa9d229340"
+  integrity sha512-JiMrs3T1A7RyF5bh0PLGKDjTR8sa/kh8w63+dW0azcNok30tKjLjwJRPTpePokWefjmRgfKaf/iZ8yfFBnpGpA==
+  dependencies:
+    "@angular-devkit/core" "19.1.6"
     rxjs "7.8.1"
 
 "@angular-devkit/build-angular@^18.2.2":
@@ -116,10 +124,22 @@
     "@angular-devkit/architect" "0.1802.2"
     rxjs "7.8.1"
 
-"@angular-devkit/core@18.2.2", "@angular-devkit/core@^18.0.0":
+"@angular-devkit/core@18.2.2":
   version "18.2.2"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-18.2.2.tgz#ca0b5127d7b4d4ab43da756490b7e8edcac29bfd"
   integrity sha512-Zz0tGptI/QQnUBDdp+1G5wGwQWMjpfe2oO+UohkrDVgFS71yVj4VDnOy51kMTxBvzw+36evTgthPpmzqPIfxBw==
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/core@19.1.6", "@angular-devkit/core@^19.0.0":
+  version "19.1.6"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.1.6.tgz#316bcfd8137aae451544669b1de864ac97b1a8d5"
+  integrity sha512-4s1RpYFGb/yP6OZ1dnYmU7maFYdhZS9pnUHKKiL9rSDhUHkX+VZlf9WFFrHv2RMWg+evrrwPtiFOTMBLShUi8g==
   dependencies:
     ajv "8.17.1"
     ajv-formats "3.0.1"
@@ -6618,10 +6638,10 @@ jest-pnp-resolver@^1.2.2:
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.3.tgz#930b1546164d4ad5937d5540e711d4d38d4cad2e"
   integrity sha512-+3NpwQEnRoIBtx4fyhblQDPgJI0H1IEIkX7ShLUjPGA7TtUTvI1oiKi3SR4oBR0hQhQR80l4WAe5RrXBwWMA8w==
 
-jest-preset-angular@14.1.0:
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/jest-preset-angular/-/jest-preset-angular-14.1.0.tgz#f6a00aad6d7c928279696067e662f59a40ba578f"
-  integrity sha512-UJwPtpsAMl30UtBjHW0Ai0hhoKsNURC1dXH5tSYjumUsWR7iDke+oBEykz7uXv4rN+PWgeNIqkxo4KHQjOITlw==
+jest-preset-angular@14.4.2:
+  version "14.4.2"
+  resolved "https://registry.yarnpkg.com/jest-preset-angular/-/jest-preset-angular-14.4.2.tgz#c2c0e1581cebed863b86efa52a14b1cb8b3cae30"
+  integrity sha512-BYYv0FaTDfBNh8WyA9mpOV3krfw20kurBGK8INZUnv7KZDAWZuQtCET4TwTWxSNQ9jS1OX1+a5weCm/bTDDM1A==
   dependencies:
     bs-logger "^0.2.6"
     esbuild-wasm ">=0.15.13"
